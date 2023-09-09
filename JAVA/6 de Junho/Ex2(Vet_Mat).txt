@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor de N: ");
+        int N = scanner.nextInt();
+
+        double[] numeros = new double[N];
+
+        System.out.println("Digite os " + N + " números reais:");
+
+        for (int i = 0; i < N; i++) {
+            numeros[i] = scanner.nextDouble();
+        }
+
+        System.out.println("Elementos do vetor:");
+
+        for (int i = 0; i < N; i++) {
+            System.out.println(numeros[i]);
+        }
+
+        double soma = 0;
+
+        for (int i = 0; i < N; i++) {
+            soma += numeros[i];
+        }
+
+        double media = soma / N;
+
+        System.out.println("Soma dos elementos: " + soma);
+        System.out.println("Média dos elementos: " + media);
+    }
+}

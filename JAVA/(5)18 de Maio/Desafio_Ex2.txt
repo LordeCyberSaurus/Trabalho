@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+    public class Desafio2 {
+         public static void main (String[] args){
+             String num = JOptionPane.showInputDialog(null, "Digite o número ");
+             int inum= Integer.parseInt(num);
+
+        double Pi = 3.14159;
+
+ 	double R = (inum * inum) * Pi;
+
+             JOptionPane.showMessageDialog(null, " A soma é: %.2f " +R);
+         }
+    }

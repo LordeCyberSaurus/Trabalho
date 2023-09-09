@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+   	Scanner sc = new Scanner(System.in);
+   	
+		int num;
+		double recebe, hora;
+		
+		System.out.println("Qual o numero do funcionario: ");
+		num = sc.nextInt();
+		
+		System.out.println("Quanto ele recebe por hora?: ");
+		recebe = sc.nextDouble();
+		
+		System.out.println("Quantas horas ele trabalha: ");
+		hora = sc.nextInt();
+		
+		double R = recebe * hora;
+
+		System.out.printf("O funcionario de numero " +num+ " Recebe R$" +R+ " reais");
+    }
+}

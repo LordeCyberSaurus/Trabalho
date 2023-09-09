@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class a {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int v1 = 0, v2 = 0;
+
+            try {
+                System.out.println("Insira o primeiro número inteiro: ");
+                v1 = Integer.parseInt(sc.next());
+                System.out.println("Insira o segundo número inteiro: ");
+                v2 = Integer.parseInt(sc.next());
+                System.out.println("A divisão de seus números é: " + (v1 / v2));
+            } catch (ArithmeticException e) {
+                System.out.println("ERRO! " + e);
+            }
+        sc.close();
+    }
+}

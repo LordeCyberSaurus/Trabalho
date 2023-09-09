@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Ex4 {
+    public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+
+        System.out.println("Insira o horario inicial:  ");
+        double HI = sc.nextDouble();
+        
+        System.out.println("Insira o horario Final:  ");
+        double HF = sc.nextDouble();
+       
+        if(HI < HF)
+        {
+            System.out.println("O jogo durou " + (HF - HI) + " horas");
+        } 
+        else if(HI == HF) 
+        {
+             System.out.println("O jogo durou 24 horas");
+        } 
+        else 
+        {
+             System.out.println("O jogo durou " + ((HF + 24) - HI) + " horas");
+        }
+    }
+}

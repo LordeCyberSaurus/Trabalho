@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor de N (máximo = 10): ");
+        int N = scanner.nextInt();
+
+        if (N <= 0 || N > 10) {
+            System.out.println("Valor inválido para N.");
+            return;
+        }
+
+        int[] numeros = new int[N];
+
+        System.out.println("Digite os " + N + " números inteiros:");
+
+        for (int i = 0; i < N; i++) {
+            numeros[i] = scanner.nextInt();
+        }
+
+        System.out.println("Números negativos lidos:");
+
+        for (int i = 0; i < N; i++) {
+            if (numeros[i] < 0) {
+                System.out.println(numeros[i]);
+            }
+        }
+    }
+}

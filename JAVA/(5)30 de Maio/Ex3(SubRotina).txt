@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+
+public class Principal {
+	public static void main(String[] args) {
+		Scanner cal = new Scanner(System.in);
+		int selec;
+		
+		 System.out.println("Digite 1 para soma, 2 para multiplicação, 3 para subtração e 4 para divisão");
+		 System.out.println("Qual operação você quer?");
+		 selec = cal.nextInt();
+
+		 if (selec == 1) 
+		 {
+			 double num1, num2;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println(Retorno1(num1,num2));
+		 }
+		 else if (selec == 2) 
+		 {
+			 double num1, num2,num3;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println(Retorno2(num1,num2));
+		 }
+		 else if (selec == 3) 
+		 {
+			 double num1,num2,num3,num4;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println(Retorno3(num1,num2));
+		 }
+		 else if (selec == 4) 
+		 {
+			 double num1,num2,num3,num4,num5;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println(Retorno4(num1,num2));
+		 }
+		 else
+		 {
+			 System.out.println("Número está fora da área permitida de cálculo");
+		 }
+	
+		 
+	}
+	
+	public static double Retorno1 (double num1, double num2)
+	{
+		return num1 + num2;
+	}
+	public static double Retorno2 (double num1, double num2)
+	{
+		return num1 * num2;
+	}
+	public static double Retorno3 (double num1, double num2)
+	{
+		return num1 - num2;
+	}
+	public static double Retorno4 (double num1, double num2)
+	{
+		return num1 / num2;
+	}
+
+}

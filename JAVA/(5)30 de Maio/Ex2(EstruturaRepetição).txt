@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner novo = new Scanner(System.in);
+        int x,y;
+        do {
+        System.out.println("Entre com o X ");
+        x = novo.nextInt();
+        
+        System.out.println("Entre com o Y ");
+        y = novo.nextInt();
+        
+        if(x > 0 && y > 0)
+        {         
+             System.out.println("Primeiro");
+        } 
+        else if(x < 0 && y > 0)
+        {         
+             System.out.println("Segundp");
+        } 
+        else if(x < 0 && y < 0)
+        {         
+             System.out.println("Terceiro");
+        } 
+        else if(x > 0 && y < 0)
+        {         
+             System.out.println("Quarto");
+        } 
+        } while (x != 0 && y !=0);
+    }
+}

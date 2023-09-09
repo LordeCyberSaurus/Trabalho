@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner novo = new Scanner(System.in);
+        int x;
+        System.out.println("Entre com o X ");
+        x = novo.nextInt();
+        
+    for (int i=1; i<x; i= i = i+2) 
+    {
+        System.out.println( + i);
+    }
+    }
+}

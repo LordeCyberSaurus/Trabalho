@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+    public class Desafio1 {
+         public static void main (String[] args){
+             String PR1 = JOptionPane.showInputDialog(null, "Digite o primeiro número ");
+             int ipr1 = Integer.parseInt(PR1);
+
+             String PR2 = JOptionPane.showInputDialog(null, "Digite o segundo número ");
+             int ipr2 = Integer.parseInt(PR2);
+
+             int R = ipr1 + ipr2;
+
+             JOptionPane.showMessageDialog(null, " A soma é: " +R);
+
+         }
+    }

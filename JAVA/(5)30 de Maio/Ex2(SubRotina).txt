@@ -1,0 +1,103 @@
+import java.util.Scanner;
+
+
+public class Principal {
+	public static void main(String[] args) {
+		Scanner cal = new Scanner(System.in);
+		int selec;
+		
+		 System.out.println("Quantos números você deseja fazer a média");
+		 selec = cal.nextInt();
+
+		 if (selec == 2) 
+		 {
+			 double num1, num2;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println(Retorno1(num1,num2));
+		 }
+		 else if (selec == 3) 
+		 {
+			 double num1, num2,num3;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println("Digite o terceiro numero: ");
+			 num3 = cal.nextDouble();
+			 
+			 System.out.println(Retorno2(num1,num2,num3));
+		 }
+		 else if (selec == 4) 
+		 {
+			 double num1,num2,num3,num4;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println("Digite o terceiro numero: ");
+			 num3 = cal.nextDouble();
+			
+			 System.out.println("Digite o quarto numero: ");
+			 num4 = cal.nextDouble();
+			 
+			 System.out.println(Retorno3(num1,num2,num3,num4));
+		 }
+		 else if (selec == 5) 
+		 {
+			 double num1,num2,num3,num4,num5;
+			 
+			 System.out.println("Digite o primeiro numero: ");
+			 num1 = cal.nextDouble();
+			
+			 System.out.println("Digite o segundo numero: ");
+			 num2 = cal.nextDouble();
+			 
+			 System.out.println("Digite o terceiro numero: ");
+			 num3 = cal.nextDouble();
+			
+			 System.out.println("Digite o quarto numero: ");
+			 num4 = cal.nextDouble();
+			 
+			 System.out.println("Digite o quinto numero: ");
+			 num5 = cal.nextDouble();
+			 
+			 System.out.println(Retorno4(num1,num2,num3,num4,num5));
+		 }
+		 else
+		 {
+			 System.out.println("Número está fora da área permitida de cálculo");
+		 }
+	
+		 
+	}
+	
+	public static double Retorno1 (double num1, double num2)
+	{
+		return (num1 + num2)/2;
+	}
+	public static double Retorno2 (double num1, double num2, double num3)
+	{
+		return (num1 + num2 + num3)/3;
+	}
+	public static double Retorno3 (double num1, double num2, double num3, double num4)
+	{
+		return (num1 + num2 + num3 + num4)/4;
+	}
+	public static double Retorno4 (double num1, double num2, double num3, double num4, double num5)
+	{
+		return (num1 + num2 + num3 + num4 + num5)/5;
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor de N: ");
+        int N = scanner.nextInt();
+
+        int[] numeros = new int[N];
+        int quantidadePares = 0;
+
+        System.out.println("Digite os " + N + " números inteiros:");
+
+        for (int i = 0; i < N; i++) {
+            numeros[i] = scanner.nextInt();
+
+            if (numeros[i] % 2 == 0) {
+                quantidadePares++;
+            }
+        }
+
+        System.out.println("Números pares:");
+
+        for (int i = 0; i < N; i++) {
+            if (numeros[i] % 2 == 0) {
+                System.out.println(numeros[i]);
+            }
+        }
+
+        System.out.println("Quantidade de números pares: " + quantidadePares);
+    }
+}

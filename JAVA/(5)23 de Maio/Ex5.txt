@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double valor;
+        System.out.println("Entre o codigo do produto ");
+        int codigo = sc.nextInt();
+
+        if (codigo >=6)
+        {
+            System.out.println("Esse produto nao existe");
+        }
+        else if (codigo <=5)
+        {
+
+        System.out.println("Entre a quantidade do produto ");
+        int qt = sc.nextInt();
+        
+        switch (codigo)
+            {
+            case 1:
+            valor = qt * 4;
+            System.out.println("Voce pediu " +qt+ " cachorro(s) quente(s), o valor a pagar e " +valor);
+            break;
+            case 2:
+            valor = qt * 4.5;
+            System.out.println("Voce pediu " +qt+ " X-Salada, o valor a pagar e " +valor);
+            break;
+            case 3:
+            valor = qt * 5;
+            System.out.println("Voce pediu " +qt+ " X-Bacon, o valor a pagar e " +valor);
+            break;
+            case 4:
+            valor = qt * 2;
+            System.out.println("Voce pediu " +qt+ " Torrada(s) simples, o valor a pagar e " +valor);
+            break;
+            case 5:
+            valor = qt * 1.5;
+            System.out.println("Voce pediu " +qt+ " refrigerante(s), o valor a pagar e " +valor);
+            break;
+            default:
+            }
+        }
+    }
+}

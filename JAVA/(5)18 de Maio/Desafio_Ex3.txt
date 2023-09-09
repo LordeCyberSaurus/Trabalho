@@ -1,0 +1,24 @@
+import java.util.Scanner;
+	public class Desafio3 {
+    		public static void main(String[] args) {
+   	Scanner sc = new Scanner(System.in);
+   	
+		int numA, numB, numC, numD;
+		
+		System.out.println("Entre com o numero de A: ");
+		numA = sc.nextInt();
+		
+		System.out.println("Entre com o numero de B: ");
+		numB = sc.nextInt();
+		
+		System.out.println("Entre com o numero de C: ");
+		numC = sc.nextInt();
+		
+		System.out.println("Entre com o numero de D: ");
+		numD = sc.nextInt();
+		
+		int R = numA * numB - numC * numD;
+
+		System.out.printf("A diferença entre A, B, C e D é:" +R);
+    }
+}

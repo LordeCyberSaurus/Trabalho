@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       double altura, largura,area, perimetro, diagonal;
+       
+       System.out.println("Entre com a altura ");
+       altura = sc.nextDouble();
+
+        System.out.println("Entre com a largura ");
+        largura = sc.nextDouble();
+        
+        area = altura * largura;
+        perimetro = (2*altura + 2*largura);
+        diagonal = altura * altura + largura * largura;
+       
+       System.out.println("Area =  " +area);
+       System.out.println("Perimetro =  " +perimetro);
+       System.out.println("Diagonal =  " +diagonal);
+
+    }
+}

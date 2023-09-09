@@ -1,0 +1,26 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int N = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de N:"));
+        double[] numeros = new double[N];
+
+        for (int i = 0; i < N; i++) {
+            numeros[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite um número real:"));
+        }
+
+        int posicaoMaior = 0;
+        double maior = numeros[0];
+
+        for (int i = 1; i < N; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+                posicaoMaior = i;
+            }
+        }
+
+        String mensagem = "O maior número é: " + maior + "\nPosição do maior elemento: " + posicaoMaior;
+        JOptionPane.showMessageDialog(null, mensagem, "Maior Número", JOptionPane.INFORMATION_MESSAGE);
+    }
+}

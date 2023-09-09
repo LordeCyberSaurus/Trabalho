@@ -1,0 +1,3 @@
+▪4.1 Faça um programa que contenha uma variável onde esteja armazenado o ano atual. Via entrada de dados, permita que o programa receba um ano de nascimento qualquer e informe a idade do usuário (desconsiderando mês e dia).
+
+▪4.2. Escreva um programa que permita ao usuário informar duas variáveis numéricas, correspondentes ao lado e à altura de duas figuras geométricas (triângulo e retângulo). Calcule suas áreas e informe-as na tela.

@@ -1,6 +1,4 @@
 # Java
-Exercicios de Programação em Java / Java Programming Exercises
+Exercicios de Programação em Java
 
-Disponível Português brasileiro...
 
-Available in English...
